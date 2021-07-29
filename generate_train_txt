@@ -1,0 +1,24 @@
+import os
+from skimage import io
+import cv2
+
+# path = r'./image/train/JPEGImages'
+# files = os.listdir(path)
+# for i in range(len(files)):
+#     if files[i][:4] == 'face':
+#         img = cv2.imread(path + '/' + files[i])
+#         cv2.imwrite('./image/train/images/' + 'nomask_' + str(i) + '.jpg', img)
+#     else:
+#         img = cv2.imread(path + '/' + files[i])
+#         cv2.imwrite('./image/train/images/' + 'mask_' + str(i) + '.jpg', img)
+
+
+classes = ["mask","nomask"]
+with open('./train1.txt', 'w') as f:
+    after_generate = os.listdir("./image/train/images")
+    for image in after_generate:
+        if image.endswith("jpg"):
+            f.write(image + ";" + str(classes.index(image.split("_")[0])) + "\n")
+
+
+
