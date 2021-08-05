@@ -10,4 +10,4 @@ https://gitee.com/hanqikai/Real-World-Masked-Face-Dataset/  口罩人脸检测�
 https://blog.csdn.net/qq_43987474/article/details/106649335  python实现人脸口罩检测（基于opencv和深度学习两种方法） 可以检测图片中的多人
 
 
-https://blog.csdn.net/weixin_44791964/article/details/115494297   bubbliiiing的目标检测
+https://blog.csdn.net/weixin_44791964/article/details/115494297   bubbliiiing的目标检测，用的是网盘里面机器学习->口罩数据里面的yes1.
